@@ -2,7 +2,7 @@
 //Lab 4
 //Written by Danny Radosevich
 //8-4-19
-
+ 
 #include <iostream>
 #include <stack>
 #include <queue>
@@ -90,6 +90,16 @@ string stringReverse(string toReverse)
 {
   stack<char> reverse; //declare the stack
   string newString = "";
+	for(int i = 0; i<toReverse.length(); i++) {
+		reverse.push(toReverse[i]);
+
+	} while (!reverse.empty()) {
+
+	newString += reverse.top();
+	reverse.pop();
+}
+
+
   /*
     Your code goes here
   */
@@ -100,6 +110,10 @@ string stringReverse(string toReverse)
 bool parenCheck(string toCheck)
 {
   queue<char> checker; //declare my queue
+
+	char p = "(";
+	checker push(
+
   /*
     Your code goes here
   */
