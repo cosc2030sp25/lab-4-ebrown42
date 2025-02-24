@@ -109,13 +109,24 @@ string stringReverse(string toReverse)
 //this function uses a queue to check if a string of parens is properly matched
 bool parenCheck(string toCheck)
 {
-  queue<char> checker; //declare my queue
+	queue<char> checker; //declare my queue
+	for(int i = 0; i< toCheck.length(); i++) {
+		if(toCheck[i] == '(') {
+			checker.push(toCheck[i]);
+		} else if (toCheck[i] == ')') {
+			if(checker.empty()) {
+				return false;
+			}
+			checker.pop();
+		}
+	}
+	return checker.empty();
+}
 
-	char p = "(";
-	checker push(
+
 
   /*
     Your code goes here
   */
-  return false; //need a return statement to compile
-}
+  //return false; //need a return statement to compile
+//}
