@@ -1,3 +1,3 @@
 # Lab 4
-Name:\
-Help Received:
+Name:\ Elle Brown
+Help Received: Michael Stoll
